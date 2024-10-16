@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans sans-serif ;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    background: #FFE3E3;
+    transition: 0.5s;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    font-size: 30px;
+    position: relative;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    display: inline-block;
+    color: #FFF;
+    margin: 40px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul{
+    position: relative;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox{
+    position: relative;
+    width: 600px;
+}
+
+.content .textBox h2{
+    color: #FFF;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.content .textBox h2 span{
+    font-size: 2em;
+}
+.content .textBox p{
+    color: #FFF;
+}
+
+/* kalau ada a */
+/* .content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #FFF;
+    border-radius: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+} */
+
+.content .imgBox{
+    width: 700px;
+    display: flex;
+    padding-right: 50px;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.content .imgBox img{
+    max-width: 220px;
+}
+
+.tumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.tumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.tumb li:hover{
+    transform: translateY(-15px);
+
+}
+
+.tumb li img{
+    max-width: 110px;
+}
+
+/* .sosial{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sosial li{
+    list-style: none;
+    color: black;
+} */

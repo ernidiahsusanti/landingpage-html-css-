@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Skincare for you ladies</title>
+   
+</head>
+<body>
+<!-- membuat navigasi  -->
+<section class="sec">
+    <header>
+        <h1 class="logo">SKINYOU</h1>
+            <ul>
+                <Li><a href="#">Home</a></Li>
+                <li><a href="#">Populer</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+    </header>
+
+    <div class="content">
+        <div class="textBox">
+            <h2>MY SKIN <br> <span>ROUTINE</span></h2>
+            <p>untuk menjaga dan merawat kulit cantikmu</p>
+        </div>
+
+        <div class="imgBox">
+            <img src="gambar/krim.png" class="skincareku">
+        </div>
+    </div>
+    <ul class="tumb">
+        <li><img src="gambar/2.png" onclick="imgSlider('2.png');changeBgColor('#CEAEDA')" ></li>
+        <li><img src="gambar/4.png" onclick="imgSlider('4.png');changeBgColor('#C0AFC6')"  ></li>
+        <li><img src="gambar/5.png" onclick="imgSlider('5.png');changeBgColor('#89838E')"  ></li>
+    </ul>
+
+    <!-- belum bisa muncul!!! -->
+    <!-- <ul class="sosial">
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+    </ul> -->
+
+</section>
+
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.skincareku').src ="gambar/" + anything;
+    }
+    function changeBgColor(color){
+        const sec =document.querySelector('.sec')
+        sec.style.background = color;
+    }
+
+</script>
+
+
+</body>
+</html>
